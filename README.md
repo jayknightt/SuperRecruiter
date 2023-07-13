@@ -1,3 +1,9 @@
+# Super Recruiter LLM (in construction) with Open Source LLM Agents
+
+Welcome to the SuperRecruiter LLM utilizing open source LLM agents! This program incorporates cutting-edge technology and automated processes to streamline the recruitment and selection of candidates in the construction industry. By leveraging the Super Recruiter.ai platform and its open source LLM agents, employers can efficiently assess and rank candidates based on their qualifications and responses. This README provides a step-by-step process for utilizing the platform effectively.
+
+
+
 <div style="left">
   <a href="https://colab.research.google.com/drive/1AzP33O8rnMW__7ocWJhVBXjKziJXPtim?usp=sharing" target="_blank">
     <img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" />
@@ -32,14 +38,14 @@
 </div>
 
 <p align="center">
-   <a href="https://github.com/camel-ai/camel#community">Community</a> |
+  
   <a href="https://github.com/camel-ai/camel#installation">Installation</a> |
   <a href="https://camel-ai.github.io/camel/">Documentation</a> |
   <a href="https://github.com/camel-ai/camel/tree/HEAD/examples">Examples</a> |
   <a href="https://arxiv.org/abs/2303.17760">Paper</a> |
   <a href="https://github.com/camel-ai/camel#citation">Citation</a> |
   <a href="https://github.com/camel-ai/camel#contributing-to-camel-">Contributing</a> |
-  <a href="https://www.camel-ai.org/">CAMEL-AI</a>
+ 
 </p>
 
 <p align="center">
@@ -49,80 +55,116 @@
 ## Overview
 The rapid advancement of conversational and chat-based language models has led to remarkable progress in complex task-solving. However, their success heavily relies on human input to guide the conversation, which can be challenging and time-consuming. This paper explores the potential of building scalable techniques to facilitate autonomous cooperation among communicative agents and provide insight into their "cognitive" processes. To address the challenges of achieving autonomous cooperation, we propose a novel communicative agent framework named *role-playing*. Our approach involves using *inception prompting* to guide chat agents toward task completion while maintaining consistency with human intentions. We showcase how role-playing can be used to generate conversational data for studying the behaviors and capabilities of chat agents, providing a valuable resource for investigating conversational language models. Our contributions include introducing a novel communicative agent framework, offering a scalable approach for studying the cooperative behaviors and capabilities of multi-agent systems, and open-sourcing our library to support research on communicative agents and beyond. The GitHub repository of this project is made publicly available on: [https://github.com/camel-ai/camel](https://github.com/camel-ai/camel).
 
-## Community
-🐫 CAMEL is an open-source library designed for the study of autonomous and communicative agents. We believe that studying these agents on a large scale offers valuable insights into their behaviors, capabilities, and potential risks. To facilitate research in this field, we implement and support various types of agents, tasks, prompts, models, and simulated environments. Join us ([slack](https://join.slack.com/t/camel-kwr1314/shared_invite/zt-1vy8u9lbo-ZQmhIAyWSEfSwLCl2r2eKA), [discord](https://discord.gg/CNcNpquyDc)) in pushing the boundaries of simulating AI Society with CAMEL.
 
-## Try it yourself
-We provide a [![Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1AzP33O8rnMW__7ocWJhVBXjKziJXPtim?usp=sharing) demo showcasing a conversation between two ChatGPT agents playing roles as a python programmer and a stock trader collaborating on developing a trading bot for stock market.
+# LLM in Construction with Open Source LLM Agents
 
-<p align="center">
-  <img src='./misc/framework.png' width=800>
-</p>
+Welcome to the LLM in Construction utilizing open source LLM agents! This program incorporates cutting-edge technology and automated processes to streamline the recruitment and selection of candidates in the construction industry. By leveraging the Super Recruiter.ai platform and its open source LLM agents, employers can efficiently assess and rank candidates based on their qualifications and responses. This README provides a step-by-step process for utilizing the platform effectively.
 
 ## Documentation
 
-[CAMEL package documentation pages](https://camel-ai.github.io/camel/)
+For detailed documentation and usage examples of the CAMEL package used in this project, please refer to the [CAMEL package documentation pages](https://camel-ai.github.io/camel/).
 
 ## Installation
-Install `CAMEL` from source with conda:
+
+To install and set up the required dependencies for the LLM in Construction program, follow the steps below:
+
+1. Create a conda virtual environment:
 ```
-# Create a conda virtual environment
 conda create --name camel python=3.10
+```
 
-# Activate camel conda environment
+2. Activate the camel conda environment:
+```
 conda activate camel
+```
 
-# Clone github repo
+3. Clone the CAMEL GitHub repository:
+```
 git clone -b v0.1.0 https://github.com/camel-ai/camel.git
+```
 
-# Change directory into project directory
+4. Change into the project directory:
+```
 cd camel
+```
 
-# Install camel from source
+5. Install CAMEL from source:
+```
 pip install -e .
+```
 
-# Install pre-commmit within camel env (only needed for opening pull requests)
+6. Install pre-commit within the camel environment (only needed for opening pull requests):
+```
 pip install pre-commit
 pre-commit install
 ```
+
 ## Example
-You can find a list of tasks for different set of assistant and user role pairs [here](https://drive.google.com/file/d/194PPaSTBR07m-PzjS-Ty6KlPLdFIPQDd/view?usp=share_link)
 
-Run the `role_playing.py` script
+To run the LLM in Construction program with the Super Recruiter.ai platform, follow the example below:
 
-First, you need to add your OpenAI API key to system environment variables. The method to do this depends on your operating system and the shell you're using.
+1. Add your OpenAI API key to the system environment variables. The method to do this depends on your operating system and shell. Choose the appropriate instructions below:
 
-**For Bash shell (Linux, macOS, Git Bash on Windows):**
+   **For Bash shell (Linux, macOS, Git Bash on Windows):**
+   ```bash
+   # Export your OpenAI API key
+   export OPENAI_API_KEY=<insert your OpenAI API key>
+   ```
 
-```bash
-# Export your OpenAI API key
-export OPENAI_API_KEY=<insert your OpenAI API key>
-```
+   **For Windows Command Prompt:**
+   ```cmd
+   REM Export your OpenAI API key
+   set OPENAI_API_KEY=<insert your OpenAI API key>
+   ```
 
-**For Windows Command Prompt:**
+   **For Windows PowerShell:**
+   ```powershell
+   # Export your OpenAI API key
+   $env:OPENAI_API_KEY="<insert your OpenAI API key>"
+   ```
 
-```cmd
-REM export your OpenAI API key
-set OPENAI_API_KEY=<insert your OpenAI API key>
-```
+   Replace `<insert your OpenAI API key>` with your actual OpenAI API key in each case. Make sure there are no spaces around the `=` sign.
 
-**For Windows PowerShell:**
+2. After setting the OpenAI API key, run the script:
+   ```bash
+   # You can change the role pair and initial prompt in role_playing.py
+   python examples/ai_society/role_playing.py
+   ```
 
-```powershell
-# Export your OpenAI API key
-$env:OPENAI_API_KEY="<insert your OpenAI API key>"
-```
+   Customize the role pair and initial prompt in the `role_playing.py` script as per your requirements.
 
-Replace `<insert your OpenAI API key>` with your actual OpenAI API key in each case. Make sure there are no spaces around the `=` sign.
+   **Note:** The environment variable is session-specific. If you open a new terminal window or tab, you will need to set the API key again in that new session.
 
-After setting the OpenAI API key, you can run the script:
+## Benefits of Using Super Recruiter.ai
 
-```bash
-# You can change the role pair and initial prompt in role_playing.py
-python examples/ai_society/role_playing.py
-```
+- **Time-saving:** The automated conversations and evaluation processes significantly reduce the time and effort required for candidate screening and selection. Employers can focus their resources on engaging with the most suitable candidates.
 
-Please note that the environment variable is session-specific. If you open a new terminal window or tab, you will need to set the API key again in that new session.
+- **Efficient evaluation:** The open source LLM agents enable intelligent conversations, ensuring a thorough evaluation of candidates' abilities and qualifications. This approach enhances the accuracy and reliability of the selection process.
+
+- **Data-driven decisions:** The comprehensive evaluation report generated by Super Recruiter.ai provides employers with valuable data to make informed decisions. The rankings and overview of each candidate facilitate efficient and objective candidate selection.
+
+- **Enhanced candidate experience:** The use of open source LLM agents in the recruitment process creates a dynamic and engaging experience for candidates. The conversational nature of the interviews provides a more realistic representation of their potential performance in the construction industry.
+
+## Getting Started
+
+To get started with the LLM in Construction utilizing open source LLM agents and the Super Recruiter.ai platform, follow these steps:
+
+1. Sign up or log in to the Super Recruiter.ai platform.
+2. Upload multiple PDF resumes of candidates into the platform.
+3. Let the platform initiate automated conversations with the candidates.
+4. Evaluate candidates based on their responses and qualifications.
+5. Utilize the comprehensive evaluation report to rank and select top candidates efficiently.
+
+## Requirements
+
+To successfully utilize the Super Recruiter.ai platform and the open source LLM agents for the LLM in Construction, ensure you have the following:
+
+- A modern web browser with internet connectivity.
+- PDF resumes of potential candidates.
+
+## License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
 ## Data (Hosted on Hugging Face)
 | Dataset | Chat format | Instruction format | Chat format (translated) |
@@ -170,9 +212,3 @@ The intended purpose and licensing of CAMEL is solely for research use.
 The source code is licensed under Apache 2.0.
 
 The datasets are licensed under CC BY NC 4.0, which permits only non-commercial usage. It is advised that any models trained using the dataset should not be utilized for anything other than research purposes.
-
-## Contributing to CAMEL 🐫
-We appreciate your interest in contributing to our open-source initiative. We provide a document of [contributing guidelines](https://github.com/camel-ai/camel/blob/master/CONTRIBUTING.md) which outlines the steps for contributing to CAMEL. Please refer to this guide to ensure smooth collaboration and successful contributions. 🤝🚀
-
-## Contact
-For more information please contact camel.ai.team@gmail.com.
